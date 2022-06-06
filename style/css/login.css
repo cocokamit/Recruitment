@@ -1,0 +1,10 @@
+﻿*{margin:0; padding:0; font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;}
+ul{ list-style:none}
+body { background:#f1f1f1}
+.box {text-align:center;position: absolute;left: 50%;top: 45%;z-index: 100;height: 400px;margin-top: -200px;width: 400px;margin-left: -200px;}
+.box img { width: 85%}
+.box ul{ margin:25px; background:#fff; text-align:left; padding:25px; -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);box-shadow: 0 1px 3px rgba(0,0,0,.13);}
+.box li{ margin-bottom:10px}
+.box input{ border:1px solid silver; padding:8px; width:94%; border-radius:4px;}
+.box input[type=submit]{ cursor:pointer; background: #2ea2cc;border-color: #0074a2;-webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);color: #fff;text-decoration: none; width:100px}
+ 

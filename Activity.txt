@@ -1,0 +1,4 @@
+﻿Oct 17, 2019
+- Server update
+ * Vacancy
+ * Jobs

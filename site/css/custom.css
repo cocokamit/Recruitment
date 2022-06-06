@@ -1,0 +1,24 @@
+.none { display: none !important }
+.txt-white {color:#fff !important;}
+.txt-gray {color:#666666 !important;}
+.wrap-menu-header {border-top: 0 !important}
+.hidden {  visibility: hidden; }
+.next-slick1,.slick-arrow{ display: none !important}
+
+.title { background: linear-gradient(to right, #fff 5%, #016d9c 95%);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+@media (max-width: 800px) {
+  
+  .social {visibility: visible;}
+  .social a { display: none }
+
+ 
+}
+
+@font-face {
+  font-family: edosz;
+  src: url('../fonts/edo_sz/edosz.ttf'); 
+}
+
+.search .select2-container .select2-selection--single { height: 40px	 }

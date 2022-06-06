@@ -1,0 +1,115 @@
+﻿*{margin:0; padding:0; color:#2188ae; font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;}
+body {background:#f7f5f2 url(../img/bg-4.png); background-repeat:repeat-x;}
+a{ text-decoration:none}
+li { list-style:none;}
+small {font-size:11px; }
+input[type=text] {border:1px solid #3c94b4;background: transparent; color: #383434}
+select {border: 1px solid #3c94b4;background: url(../../style/img/icon-3.png) no-repeat right;-moz-appearance: none;-webkit-appearance: none;appearance: none;}
+ 
+
+.ds { text-align:center; background-image: url(../../style/img/bg-2.png); margin:135px 0 45px 0; height:45px; width:100%; text-align: center; color:White}
+.ds span { line-height:45px; color:White;}
+.row { width:1100px; margin:0px auto; }
+.col-a {width:150px;float:left; }
+.col-a h4{ font-size:14px}
+.col-b {width:920px; float:right;}
+.col-row {float:left; width:100%; margin-bottom:10px}
+.col-row ul { float:left;}
+.personal { text-align:center; margin-top:0px }
+.personal small { font-size:10px;}
+.img-del {margin:12px 0 0 0}
+.personal-a small{ float:left; margin-top:0px; }
+.personal-a input[type=text] { width:291.3px; padding:5px;margin-right:5px}
+.address select { width:175.4px; padding:5px; margin-right:5px; }
+.address-text,.barang {padding:6px; margin-right:5px}
+.address-text {width:160px}
+.barang { width:184px; margin:0}
+.contact { margin-top:-5px}
+.contact input[type=text] {padding:5px; margin-right:5px; width:200px}
+.contact select{padding:4px; }
+.educ {text-align:center; margin-top:60px}
+.educ-a {margin-top:10px}
+.image_src {cursor: pointer; width: 98px;height: 95px;opacity: 0;filter: alpha(opacity=0);}
+.select-wrapper {background: url(../../style/img/icon-2.png) no-repeat;  background-size: cover;display: block; width: 98px;height: 95px;margin:5px auto 0 auto; border:1px solid trasparent}
+.select-wrapper small { margin-top:-100px }
+.educ-b ul{float:left;}
+.educ-b li{display:inline; font-size:12px}
+.educ-b input[type=text] {padding:5px; width:260px; margin-right:0}
+.educ-b select{padding:4px; }
+.educ-b div { float:left; width:129.5px; font-size:12px; padding-top:6px}
+.emp {text-align:center; margin-top:40px }
+.emp-b { margin-top:20px}
+.sub-tb,.sub-tb tr, .sub-tb td, .sub-tb th {border:none}
+.sub-tb { width:100%}
+.sub-tb input[type=text] { padding:5px; margin-bottom:10px }
+.tb-pos-a { width:230px; border:1px solid red}
+.tb-pos-b { width:220px}
+.tb-pos-c { border:1px solid red}
+.tb-pos-txt { width:96%;}
+.tb-pos-txt-a { width:92%;}
+.sb-cnt { font-size:11px}
+.special { text-align:center; font-size:15px; width:150px; position:absolute; margin:5px 0 0 -180px}
+.hide { visibility:hidden}
+.capcha{ float:left; margin:25px 0; width:100%; text-align:center}
+.capcha input[type=submit] {padding: 8px;width: 94%;border-radius: 4px;border: none;cursor: pointer;background: #2ea2cc;border-color: #0074a2;-webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);color: #fff;text-decoration: none;width: 100px;}
+.capcha a { position:absolute; margin-left:-40px;}
+.docs-toolbar { margin-bottom:10px}
+.modal-content { margin-left:-370px; top:10%; width:300px; text-align:center}
+.img-container { display:none}
+.btn span{ font-size:12px; display:block; margin-top:0px}
+.btn input[type=file] { visibility:hidden}
+.sv { margin-top:30px}
+.btn-group li{ display:inline-block; }
+.docs-data-url img { max-height:95px; border-radius:3px;  border:1px solid #3c94b4; padding:5px; margin:5px 0}
+.btn-group #getDataURL2 { display:none; margin-left:10px;}
+.ui-datepicker span { color: Black}
+
+@media only screen and (max-width: 800px) 
+{
+    ul { width:100%}
+   .row {width:90%;}
+   .col-a,.col-b { width:100%}
+   .personal { text-align:center; margin:-20px 0 10px 0; }
+   .personal-a ul { margin-bottom:5px}
+   .personal-a input[type=text] { float:left; width: calc(100% - 11px); margin-top:5px}
+   .personal-a small{float:right}
+   .personal-a ul,.contact ul 
+   {-moz-transform: rotate(180deg);-webkit-transform: rotate(180deg);transform: rotate(180deg);}
+   .personal-a ul > li > small, .personal-a ul > li > input, .contact ul > li > small, .contact ul > li > input
+   {-moz-transform: rotate(-180deg);-webkit-transform: rotate(-180deg);transform: rotate(-180deg);}
+   
+   .address { margin-top:15px;}
+   .address small { margin-top:-55px; float:left; font-size:11px}
+   .address select { width:100%; margin-bottom:5px}
+   .address-text,.barang {width: calc(100% - 14px);margin-bottom:5px}
+   
+   .contact input[type=text] {width: calc(100% - 12px); margin-right:0px; margin-top:5px}
+   .contact small { float:right; margin-top:5px}
+   .normal {-moz-transform: rotate(-180deg);-webkit-transform: rotate(-180deg);transform: rotate(-180deg);}
+   
+   .educ {text-align:center; margin-top:20px}
+   .select-wrapper { float:none; margin:10px auto; margin-bottom:5px}
+   
+    .educ-b { margin-top:0px}
+    .educ-b input[type=text] { width: calc(100% - 11px); margin-bottom:5px}
+    
+    .sub-tb td {display:block; width:100%; margin-bottom:5px}
+    .sub-tb td  input[type=text]{ width: calc(100% - 11px);}
+    .sb-cnt { display:none; color:White}
+     .tb-add { float:right; margin-top:-50px; margin-left:8px}
+     
+     .capcha a { position:absolute; margin-left:-45px;}
+     
+     .closex {left:10px}
+     .docs-data-url img { max-height:300px; border-radius:3px; margin:5px 0}
+     .btn span{ font-size:12px; display:block; margin-top:10px}
+     
+     .emp-b-txt{ width:93% !important}
+     .emp-b table td { display:inline}
+     .emp-b-add { float:left; margin:-10px 0 0 -5px; }
+     
+     .special { text-align:center;font-size:15px; width: calc(100% - 55px); margin:-30px 0 0 0}
+
+@-moz-document url-prefix() { 
+    .address small { margin-top:-58px; }
+}

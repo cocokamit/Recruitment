@@ -1,0 +1,67 @@
+﻿*{margin:0; padding:0; font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;}
+ul{ list-style:none}
+a{text-decoration:none;}
+body { background:#fcfcfc   }
+table, tr, td, th { border:none}
+.lft { float:left; }
+.rgt { float:right;}
+.hide { visibility:hidden}
+.left { z-index:1; position:fixed; float:left;  width:250px;  height: calc(100vh);background:white;}
+.left img { margin:0 15px; width:220px}
+.left hr {border:1px solid #0e76bd; margin:5px 10PX}
+.left ul { margin:10px 20px; }
+.left li { line-height:40px}
+.left a { color:#484848; font-size:15px; font-size:14px}
+.curr a { color:#1177be}
+.curr-b a { border-left:none; padding-left:5px;  color:#1177be}
+.co a{ padding-left:10px}
+.right { margin: 0 0 0 250px; height:auto; height: calc(80vh);  padding-top:50px; }
+.lg { background:white; height:60px; border-bottom:1px solid #e7e7e7; width:100%; position:fixed; }
+
+
+.gvsh { width:98%; font-size:12px; }
+.GridviewScrollHeader TH, .GridviewScrollHeader TD {  font-weight: bold; white-space: nowrap;   text-align: left; vertical-align: bottom; } 
+.GridviewScrollHeader TH { line-height:40px;  border-bottom: 2px solid black; } 
+.GridviewScrollHeader TH input[type=checkbox] {border:1px solid red; position:absolute; margin-top:-25px}
+.GridviewScrollHeader A { color: Black; }
+.GridviewScrollItem TD { line-height:40px;  white-space: nowrap; border-bottom: 1px solid #ccc; } 
+.GridviewScrollPager { background-color: #FFFFFF; } 
+.GridviewScrollPager TD { padding-top: 3px; font-size: 14px; padding-left: 5px; padding-right: 5px; } 
+#content_grid_jobVerticalRail { width:15px}
+ 
+.page-header { z-index:0; position:fixed; width:100%;  margin:11px 10px 0 5px; background: #fcfcfc url(../img/icon/i-home.png) no-repeat 0px 10px; height:45px; border-bottom: 1px solid #eee; }
+.page-header h5 {float:left; margin:  12px 0 0 30px; color:#046fba;}
+.page-content {   border-left: 1px solid #eee; height: calc(80vh); padding:10px}
+.btn  {border: none;padding: 8px 15px;border-radius: 4px;cursor: pointer;background: #2ea2cc;border-color: #0074a2;-webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);color: #fff;text-decoration: none;}
+
+.table { width:100%; float:left;  }
+.table th { text-align:left; line-height:40px; text-transform:uppercase; border-bottom:2px solid black}
+.table tr { border-bottom:1px solid #ccc; line-height:40px; font-size:13px}
+.table tr:hover { background:#f0f0f0;}
+.table tr:first-child { background:none}
+.table tr:last-child { border:none}
+.table a { color:Black;}
+
+.pcs { border-bottom:1px solid #eee; height:50px; margin:46px -15px 0px 0; background:#fcfcfc; width: calc(85% - 30px)}
+
+.pcs input[type=text] { padding:5px}
+.pcs-sub { float:right; margin:15px 0}
+.no-event { margin:60px 0 0px 0;}
+
+.out { z-index:1; font-size:13px; color:Gray;float:right; margin:20px 15px;padding-right:15px;}
+.outout { z-index:3; border-radius:3px; padding:5px;  margin:47px -6px 0 0; position:fixed; right:0; width:auto; border:1px solid silver; background: #fff;    }
+.outout a{background: url(../img/off.png) right center no-repeat; float:right; clear:right; margin:0 5px 0px 5px; padding-right:20px; color:Gray;font-size:12px;}
+.outout a:hover{ color: Maroon; background: url(../img/hover-off.png) right center no-repeat;} 
+.outout img{ margin-top:-18px; float:right; margin-right:0px;}
+
+.ul input[type=text] { padding:5px; width:340px; margin-bottom:10px}
+.ul select { padding:5px; width:350px; margin-bottom:10px}
+ 
+ /**pop up**/
+.Overlay { position:fixed; top:0px; bottom:0px; left:0px; right:0px; overflow:hidden; padding:0; margin:0; background-color:#000; filter:alpha(opacity=50); opacity:0.5; z-index:1000;}
+.PopUpPanel { position:absolute;background-color: #fff;top:15%; z-index:2001; padding:20px;min-width:350px;max-width:750px;-moz-box-shadow:2px 2px 3px #000000;-webkit-box-shadow:2px 2px 5px #000000;box-shadow:2px 2px 5px #000000;border-radius:5px;-moz-border-radiux:5px;-webkit-border-radiux:5px;}
+.PopUpPanel li { font-size:12px}
+.PopUpPanel input[type=text], textarea { padding:5px; margin-bottom:5px}
+.PopUpPanel select { padding:5px;margin-bottom:5px }
+.PopUpPanel hr { margin:0px 0px 5px 0  }
+.close { margin-top:-27px; margin-right:-30px; float:right;}

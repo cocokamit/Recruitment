@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="content_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>www.domainname.com.ph</title>
+    <link href="../style/css/style.css" rel="Stylesheet" type="text/css" />
+    <script type="text/javascript" src="script/script.js"></script>
+
+   
+
+    <script>
+
+
+//        var someSession = '<%= Session["ngalan"].ToString() %>';
+
+//        if (someSession == "0")
+//            window.location = "quit";
+
+     function preventBack() {
+         window.history.forward();
+         window.history.backward();
+     }
+     setTimeout("preventBack()", 0);
+     window.onunload = function () { null };
+
+
+    </script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
+    <form id="form1" runat="server">
+
+     <div class="header">
+        <div class="sub_hd">
+            
+                                      <% string query = "select loc_id from account where id='" + Session["user_id"].ToString() + "'"; %>   
+                         <% System.Data.DataTable dt = new System.Data.DataTable(); %>  
+                         <% dt = dbhelper.getdata(query); %>  
+
+                        
+                        <% if (dt.Rows[0]["loc_id"].ToString() == "1") %>
+                        <% {%>
+                        <img src="style/img/png/maribago.png" style="height:100px;" alt="Bluewater" class="logo" />
+                        <% }%>
+
+                            <% else if (dt.Rows[0]["loc_id"].ToString() == "2") %>
+                        <% {%>
+                        <img src="style/img/png/pangloa.png" style="height:100px;" alt="Bluewater" class="logo" />
+                        <% }%>
+
+                            <% else if (dt.Rows[0]["loc_id"].ToString() == "3") %>
+                        <% {%>
+                        <img src="style/img/png/sumilon.png" style="height:100px;" alt="Bluewater" class="logo" />
+                        <% }%>
+
+                        <% else if (dt.Rows[0]["loc_id"].ToString() == "4") %>
+                        <% {%>
+                        <img src="style/img/png/almot.png" style="height:100px;" alt="Bluewater" class="logo" />
+                        <% }%>
+
+                        <% else if (dt.Rows[0]["loc_id"].ToString() == "5") %>
+                        <% {%>
+                        <img src="style/img/png/amuma.png" style="height:100px;" alt="Bluewater" class="logo" />
+                        <% }%>
+
+                            <% else if (dt.Rows[0]["loc_id"].ToString() == "6") %>
+                        <% {%>
+                        <img src="style/img/png/other.png" style="height:100px;" alt="Bluewater" class="logo" />
+                        <% }%>
+            <a href="javascript:void(0)" onclick="kita('signoff')" class="out"><% Response.Write(Session["ngalan"].ToString()); %></a>
+            <div id="signoff" class="outout boxshadow">
+                <img src="style/img/logout.png" alt=""/>
+                <a href="quit">sign out</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="side">
+            <ul>
+        <% switch (Session["ngalan"].ToString())
+           {
+               case "HR":%>
+                    <li runat="server" id="jl"><a href="joblist"><span>Positions</span></a></li>
+                    <li runat="server" id="Li1"><a href="jobtypelist"><span>Departments</span></a></li>
+                    <li runat="server" id="template" visible="false"><a href="jobdetails"><span>Job Details</span></a></li>
+                    <li runat="server" id="register" visible="false"><a href="addJobtype"><span>Job Type</span></a></li>
+                    <li runat="server" id="Li4"><a href="Examinition"><span>Exams</span></a></li>
+                    <li runat="server" id="Li8" ><a href="users"><span>User</span></a></li>
+                    <li runat="server" id="Li11"><a href="viewMP"><span>Manpower Request</span></a></li>
+                    <li runat="server" id="Li2"><a href="location"><span>Properties</span></a></li>
+                    <li runat="server" id="Li12"><a href="source"><span>Source</span></a></li>
+                    <li id="li21" runat="server"><a href="banner"><span>Banner</span></a></li>
+                    <li id="Li15" runat="server"><a><span>Evaluation</span></a></li>
+                    <li runat="server" id="Li14" style=" margin-left:10px;"><a href="evaluation"><span>Questionnaire</span></a></li>
+                    <li runat="server" id="Li16" style=" margin-left:10px;"><a href="evalresult"><span>Result</span></a></li>
+                    <li id="Li3" runat="server"><a href="appl"><span>Applicants</span></a></li>
+                    <li runat="server" id="Li6" style=" margin-left:10px;"><a href="reject"><span>Not Qualified</span></a></li>
+                    <li runat="server" id="Li7" style=" margin-left:10px;"><a href="Hired"><span>Hired</span></a></li>
+                    <li runat="server" id="Li5" style=" margin-left:10px;"><a href="exmrlt"><span>Exam Results</span></a></li>
+                    <li id="li22" runat="server" ><a href="report"><span>Report</span></a></li>
+                     
+                    
+                    <%break;
+                      
+                 case "Manager":%>
+                    <li id="Li13" runat="server"><a href="appl"><span>Applicants</span></a></li>
+                     <li runat="server" id="Li10" style=" margin-left:10px;"><a href="Hired"><span>Hired</span></a></li>
+                     <li runat="server" id="Li9" style=" margin-left:10px;"><a href="MP"><span>Request Manpower</span></a></li>
+                    <%break;      
+                      
+                 case "HR_sub":%>
+                    <li runat="server" id="Li23"><a href="joblist"><span>Positions</span></a></li>
+                    <li id="Li17" runat="server"><a href="appl"><span>Applicants</span></a></li>
+                    <li runat="server" id="Li18" style=" margin-left:10px;"><a href="reject"><span>Not Qualified</span></a></li>
+                    <li runat="server" id="Li19" style=" margin-left:10px;"><a href="Hired"><span>Hired</span></a></li>
+                    <li runat="server" id="Li20" style=" margin-left:10px;"><a href="exmrlt"><span>Exam Results</span></a></li>
+                    <%break;    
+                      
+           } %>
+             </ul>
+        </div>
+
+         <div class="left content">
+            <asp:ContentPlaceHolder id="content" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+
+
+    </form>
+</body>
+</html>
